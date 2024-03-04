@@ -1,4 +1,11 @@
 public class R00_IDS03_J{
+    // defective code
+    if (loginSuccessful){
+        logger.severe(”User login succeeded for: ” + username);
+        } e l s e {
+        logger.severe(”User login failed for: ” + username);
+        }
+    // fixed code
     if(loginSuccessful){
         logger.severe(”User login succeeded for:” + sanitizeUser(username));
     }else{
